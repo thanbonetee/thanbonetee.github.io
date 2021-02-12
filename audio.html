@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ThanBoneTee</title>
+    <link href='https://fonts.googleapis.com/css?family=Gaegu' rel='stylesheet'>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="images/icon-152.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="white"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="ThanBoneTee">
+  <meta name="msapplication-TileImage" content="images/icon-144.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+</head>
+<body class="fullscreen">
+  <div class="container">
+      <h1 class="title"><a href="index.html" style="text-decoration: none; color:red">ThanBoneTee</a>
+      </h1>
+                      <div id="tbtImg"></div>
+
+        <audio id="audio" src="audio/audio.mp3" type="audio/mpeg"></audio>
+
+
+<div id="audio-player-container">
+  <input type="image" src="images/play.png" onclick="play()" style="height: 40px;"/>
+  <input type="image" src="images/pause.png" onclick="pause()" style="height: 40px;"/>
+
+
+
+   
+<div id="audio-player-container">
+
+     
+     
+        <input id="volume-slider" type="range" min="0" max="1" value="1" step="0.1"> <br>
+    
+    <input id="vol-down-btn" type="image" src="images/minus.png" onclick="volDown()"  style="width:16px;"/>
+    
+    <input id="vol-up-btn" type="image" src="images/plus.png" onclick="volUp()"  style="width:16px;"/>
+
+       </div>
+
+      
+  </div>
+<script src="js/main.js"></script>
+</body>
+</html>

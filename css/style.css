@@ -1,0 +1,136 @@
+body {
+  font-family: 'Gaegu'; font-size: 22px;
+}
+
+/* Make content area fill the entire browser window */
+html,
+.fullscreen {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+    background-color: #000000;
+}
+
+/* Center the content in the browser window */
+.container {
+      margin: auto;
+  text-align: center;
+}
+.title {
+  font-size: 3rem;
+    color: red;
+}
+
+
+#audio-player-container {
+	width: 82vw; 
+    max-width: 800px; 
+    margin: 0px 0px;
+    padding: 0;
+}
+
+#tbtImg{
+    margin : 20px auto;
+    background-color: #000000;
+    height: 220px;
+    width : 300px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+}
+
+#vol-down-btn{
+margin-bottom: 3px;
+}
+
+
+p, li{
+    font-size: 12px;
+    padding: 1rem 0rem;
+    color: white;
+    font-weight: lighter;
+}
+
+    
+.sizes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sizes button {
+  padding: 15px 20px;
+  background: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  color: lightgray;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: 80px;
+      -webkit-appearance: none;
+      background-color: darkred;
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: red;
+      margin-top: -1px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+      cursor: ew-resize;
+      background: #434343;
+      box-shadow: -80px 0 0 80px red;
+    }
+
+}
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: red; 
+}
+input[type="range"]::-moz-range-track {  
+  background-color: darkred;
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: red; 
+}
+input[type="range"]::-ms-fill-upper {  
+  background-color: #434343;
+}
